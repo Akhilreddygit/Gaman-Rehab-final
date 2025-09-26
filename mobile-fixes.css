@@ -1,0 +1,211 @@
+/* Additional Mobile Fixes */
+@media (max-width: 768px) {
+    /* Mobile Navigation Improvements */
+    .nav-menu {
+        align-items: flex-start;
+        padding-top: 70px;
+    }
+    
+    .nav-menu li {
+        margin: 8px 0;
+        padding-left: 30px;
+    }
+    
+    .nav-link {
+        text-align: left;
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    
+    .mobile-only {
+        display: block !important; /* Show on mobile */
+        margin-top: 30px;
+    }
+    
+    .mobile-book-btn {
+        margin: 10px auto;
+    }
+
+    /* Ensure testimonial cards are properly contained */
+    .testimonial-carousel-container {
+        width: 600%;
+        overflow: hidden;
+    }
+    
+    .testimonial-card {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        height: auto;
+        min-height: 580px;
+        padding: 25px;
+    }
+    
+    .testimonial-quote {
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 5px;
+    }
+    
+    .testimonial-content {
+        height: auto;
+    }
+    
+    .treatment-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    /* Make sure gallery has proper positioning */
+    .facilities-gallery {
+        position: relative;
+        padding: 0 10px;
+    }
+    
+    .gallery-container {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .gallery-main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Gallery Navigation Button Positioning */
+    .gallery-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.9);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .prev-nav {
+        left: 10px;
+    }
+    
+    .next-nav {
+        right: 10px;
+    }
+    
+    /* Ensure gallery images and videos are consistently sized */
+    .gallery-slide img,
+    .gallery-slide video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    /* Video overlay improvements */
+    #galleryVideoOverlay {
+        z-index: 5;
+    }
+    
+    #galleryPlayButton {
+        z-index: 10;
+    }
+    
+    /* Footer improvements */
+    .footer-section {
+        padding: 0 15px;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    
+    /* Improve spacing in footer content */
+    .footer-logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .footer-section .footer-text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+    
+    .contact-info a {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    /* Contact section improvements */
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+    
+    .info-items {
+        justify-content: center;
+    }
+}
+
+/* Additional small phone fixes */
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 20px 15px;
+    }
+    
+    .google-badge {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .rating-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .gallery-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .gallery-dots {
+        margin-top: 15px;
+    }
+    
+    .gallery-slide {
+        height: 250px;
+    }
+    
+    .gallery-slide img,
+    .gallery-slide video {
+        height: 250px;
+    }
+    
+    /* Make the mobile book button more prominent */
+    .mobile-book-btn {
+        width: 90%;
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+    
+    /* Keep desktop book appointment button visible and styled properly */
+    .header-book-btn {
+        padding: 7px 12px;
+        font-size: 11px;
+        margin-right: 45px;
+        background: #f97316;
+        color: white;
+        border: none;
+        border-radius: 8px;
+    }
+}
