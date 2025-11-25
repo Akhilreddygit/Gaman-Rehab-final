@@ -940,6 +940,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const muteToggle = document.getElementById('muteToggle');
     const playPauseBtn = document.getElementById('playPauseBtn');
     
+    // Handle autoplay error - suppress the error message
+    if (heroVideo) {
+        heroVideo.play().catch(error => {
+            console.log('Video autoplay was prevented, user interaction required:', error.name);
+        });
+    }
+    
     if (heroVideo && muteToggle) {
         // Mute/Unmute functionality
         muteToggle.addEventListener('click', function() {
