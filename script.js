@@ -960,7 +960,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const videoData = window.videoViewportManager?.videos?.find(v => v.element === heroVideo);
             
             if (heroVideo.paused) {
-                heroVideo.play();
+                heroVideo.play().catch(error => {
+                    // Suppress autoplay errors
+                    console.log('Video play interrupted:', error);
+                });
                 playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
                 playPauseBtn.title = 'Pause video';
                 // Clear manual pause flag when user clicks play
